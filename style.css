@@ -1,0 +1,32 @@
+
+.countdown div {
+    position: relative;
+    text-align:center;
+}
+
+.countdown div::before {
+    content: "";
+    position: absolute;
+    bottom:-38px;
+    left: 0;
+    font-size: 1.2rem;
+    line-height: 35px;
+    letter-spacing: 1px;
+    width:100%;
+}
+
+.countdown #day::before {
+    content: "Days";
+}
+
+.countdown #hour::before {
+    content: "Hours";
+}
+
+.countdown #minute::before {
+    content: "Min";
+}
+
+.countdown #second::before {
+    content: "Sec";
+}
